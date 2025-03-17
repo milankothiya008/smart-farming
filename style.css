@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #228B22;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+}
+nav ul {
+    list-style: none;
+    padding: 10px 10px;
+    text-align: center;
+    background: #0f542d;
+    margin: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;    
+}
+nav ul li a {
+    float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding-right: 20px;
+  text-decoration: none;
+  margin-left: 20px;
+  align-items: center;
+  
+}
+nav ul li a:hover {
+    background-color: #0b4a26;
+    text-decoration: underline;
+    color: #FFD700;
+   
+    
+}
+.hero {
+    background-image:url("back 5.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-size: 100% 100%;
+    
+    text-align: center;
+    padding: 250px 20px;
+}
+.hero h2 {
+    font-size: 36px;
+    color: white;
+}
+.hero p {
+    font-size: 20px;
+    
+}
+.btn {
+    background: #FFD700;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.btn:hover{
+    background-color: rgba(19, 246, 106, 0.808);
+    color: black;
+    padding: 10px 20px;
+    text-decoration: underline;
+}
+
+.features {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(79, 211, 238, 0.784);
+    max-width: 300px;
+}
+
+.feature img {
+    width: 100%;
+    border-radius: 10px;
+   
+}
+.feature img:hover {
+    transform: scale(0.95);
+    transition: 1s;
+    
+  
+}
+footer {
+    background: #2E8B57;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
