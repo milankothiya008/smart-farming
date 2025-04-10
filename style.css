@@ -131,8 +131,8 @@ header {
     display: inline-block;
 }
 .btn:hover{
-    background-color: rgba(19, 246, 106, 0.808);
-    color: black;
+    background-color: rgba(8, 33, 86, 0.878);
+    color: #FFD700;
     padding: 10px 20px;
     text-decoration: underline;
 }
@@ -169,9 +169,61 @@ header {
     
   
 }
-footer {
-    background: #2E8B57;
-    color: white;
+.contact-footer {
+    background-color: #1f2d3d;
+    color: #f5f5f5;
+    padding: 40px 20px;
     text-align: center;
+  }
+  
+  .contact-footer h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  .contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  
+  .contact-card {
+    background-color: #2c3e50;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+  }
+  
+  .contact-card i {
+    font-size: 1.5rem;
+    color: #ffc107;
+    margin-bottom: 10px;
+  }
+  
+  .contact-card h3 {
+    color: #fcd34d;
+    margin-bottom: 10px;
+  }
+  
+  .social-section h4 {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    color: #f5f5f5;
+    margin: 0 10px;
+    font-size: 1.4rem;
+    background-color: #2c3e50;
     padding: 10px;
-}
+    border-radius: 50%;
+    transition: background 0.3s;
+  }
+  
+  .social-icons a:hover {
+    background-color: #ffc107;
+    color: #1f2d3d;
+  }
+  

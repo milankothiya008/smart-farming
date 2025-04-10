@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #eceeee;
+  color: #2f4f4f;
+}
+.navbar {
+  background-color: #246360e0;
+  color: #f8f4ee;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 1.8rem;
+  color: #d4af37;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  color: #f8f4ee;
+  text-decoration: none;
+  margin-left: 1.8rem;
+  transition: color 0.3s;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: #d4af37;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #d4af37;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 128, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2e8b57;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.feedback-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.feedback-form textarea {
+  resize: vertical;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  margin-top: 5px;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 1.5rem;
+  color: #ccc;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: #f4c542;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  background-color: #2e8b57;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #246b44;
+}

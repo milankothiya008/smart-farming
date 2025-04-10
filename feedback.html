@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback - Smart Farming</title>
+  <link rel="stylesheet" href="feedback.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+        <a href="#home" class="nav-logo">Feedback </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#all-stories">FAQ</a>
+            <a href="#contact">Contact</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+    </div>
+</nav>
+  <div class="container">
+    <h1>We value your feedback 🌿</h1>
+    <p>Help us improve Smart Farming by sharing your thoughts below.</p>
+    
+    <form class="feedback-form" action="#" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+      
+      <label for="rating">Rate your experience</label>
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5" />
+        <label for="star5">★</label>
+        <input type="radio" id="star4" name="rating" value="4" />
+        <label for="star4">★</label>
+        <input type="radio" id="star3" name="rating" value="3" />
+        <label for="star3">★</label>
+        <input type="radio" id="star2" name="rating" value="2" />
+        <label for="star2">★</label>
+        <input type="radio" id="star1" name="rating" value="1" />
+        <label for="star1">★</label>
+      </div>
+      
+      <label for="message">Your Feedback</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+</body>
+</html>
