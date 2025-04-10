@@ -6,49 +6,85 @@ body {
 }
 
 header {
-    background: #228B22;
+    background: #0b450b;
     color: white;
     text-align: center;
     padding: 20px 30px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 10px 10px;
-    text-align: center;
-    background: #0f542d;
-    margin: 0;
-    height: 40px;
-    
-    /* margin-bottom: 20px; */
+.navbar {
+    background-color: #246360e0;
+    color: #f8f4ee;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
 }
-nav ul li {
-    display: inline;
-    margin:  15px; 
-     
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-nav ul li a {
-float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  margin-right: 25px; 
-  text-decoration: none;
-  
- padding: 10px 10px;
-  margin-top: 0px;
-  align-items: center;
+
+.nav-logo {
+    font-size: 1.8rem;
+    color: #d4af37;
+    text-decoration: none;
+    letter-spacing: 1px;
 }
-nav ul li a:hover {
-    background-color: #0b4a26;
-    text-decoration: underline;
-    color: #FFD700;
-    
-   
-    
+
+.nav-links a {
+    color: #f8f4ee;
+    text-decoration: none;
+    margin-left: 1.8rem;
+    transition: color 0.3s;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: #d4af37;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #d4af37;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+.featured-stories h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #1a120b;
+    position: relative;
+    display: inline-block;
+}
+
+.featured-stories h2::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    bottom: -10px;
+    left: 25%;
+    background-color: #d4af37;
 }
 .hero {
-    background-image:url("back_7.jpg");
+    background-image:url("background2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -56,6 +92,20 @@ nav ul li a:hover {
     
     text-align: center;
     padding: 250px 20px;
+}
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: #d4af37;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    font-style: italic;
 }
 .hero h2 {
     font-size: 36px;
