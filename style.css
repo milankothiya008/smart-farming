@@ -1,19 +1,15 @@
+/* Body & General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    padding-top: 64px;
 }
 
-header {
-    background: #0b450b;
-    color: white;
-    text-align: center;
-    padding: 20px 30px;
-}
-
+/* Navbar Styling */
 .navbar {
-    background-color: #246360e0;
+    background-color: rgba(36, 99, 96, 0.9); /* Semi-transparent background */
     color: #f8f4ee;
     padding: 1rem 0;
     position: fixed;
@@ -66,60 +62,7 @@ header {
 .nav-links a:hover::after {
     width: 100%;
 }
-.featured-stories h2 {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: #1a120b;
-    position: relative;
-    display: inline-block;
-}
 
-.featured-stories h2::after {
-    content: '';
-    position: absolute;
-    width: 50%;
-    height: 3px;
-    bottom: -10px;
-    left: 25%;
-    background-color: #d4af37;
-}
-.hero {
-    background-image:url("background2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    background-size: 100% 100%;
-    
-    text-align: center;
-    padding: 250px 20px;
-}
-.hero-content h1 {
-    font-size: 4rem;
-    margin-bottom: 1.5rem;
-    color: #d4af37;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    letter-spacing: 2px;
-}
-
-.hero-content p {
-    font-size: 1.5rem;
-    max-width: 700px;
-    margin: 0 auto 3rem;
-    font-style: italic;
-}
-.hero h2 {
-    font-size: 36px;
-    color: white;
-}
-.hero p {
-    font-size: 20px;
-    
-        color: white;
-        text-align: center;
-    
-    
-    
-}
 .btn {
     background: #FFD700;
     color: black;
@@ -129,12 +72,111 @@ header {
     border-radius: 5px;
     margin-top: 10px;
     display: inline-block;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s, text-decoration 0.3s;
+    position: relative;
+    z-index: 2;
 }
-.btn:hover{
+
+
+.btn:hover {
     background-color: rgba(8, 33, 86, 0.878);
     color: #FFD700;
-    padding: 10px 20px;
     text-decoration: underline;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+}
+
+
+
+.btn::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #FFD700;
+    transition: width 0.3s;
+}
+
+.btn:hover::after {
+    width: 100%;
+}
+/* Hero Section */
+.hero {
+    background-image: url("back 5.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 250px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    filter: brightness(1.1) contrast(1.1); /* ✅ Makes background vivid */
+}
+
+
+
+
+
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for better text visibility */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: #e2b10e;
+    text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px;
+}
+
+.hero-content h2 {
+    font-size: 1.8rem;
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+    font-style: italic;
+    color: #0eca0e;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Added shadow for better clarity */
+}
+
+/* Learn More Button */
+/* Learn More Button */
+
+.featured-stories
+{
+    
+    display: inline-block;
+  position: relative;
+  font-size: 1.2rem;
+  color: #1c1c1c;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.featured-stories::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -9px; /* Adds space below text */
+    width: 100%;
+    height: 6px; /* Thick underline */
+    background: #d4af37;
+    border-bottom-right-radius: 10px; /* Rounded right corner */
+    box-shadow: 0 0 10px #d4af37, 0 0 20px #d4af37;
 }
 
 .features {

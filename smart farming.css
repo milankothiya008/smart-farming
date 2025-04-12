@@ -10,6 +10,7 @@ body {
     background: #f3f6f4;
     color: #1c1c1c;
     line-height: 1.6;
+    padding-top: 80px;
 }
 .navbar {
     background-color: #077e31d5;
@@ -65,6 +66,7 @@ body {
 .nav-links a:hover::after {
     width: 100%;
 }
+
 /* Header Styling */
 header {
     background-color: #077e31d5; /* Earth Green */
