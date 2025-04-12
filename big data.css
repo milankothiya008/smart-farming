@@ -1,8 +1,7 @@
-/* Base Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -15,7 +14,7 @@ body {
     background-color: #077e31d5;
     color: #f8f4ee;
     padding: 1rem 0;
-    position: fixed;
+   
     top: 0;
     width: 100%;
     z-index: 100;

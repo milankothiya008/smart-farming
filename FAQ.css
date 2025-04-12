@@ -1,4 +1,8 @@
- /* FAQ Page Specific Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
  .navbar {
     background-color: #246360e0;
     color: #f8f4ee;
