@@ -6,10 +6,10 @@ body {
   margin-top: 75px;
 }
 .navbar {
-  background-color: #246360e0;
+  background-color: #077e31d5;
   color: #f8f4ee;
   padding: 1rem 0;
-  position: fixed;
+ position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
@@ -62,8 +62,9 @@ body {
 
 .container {
   max-width: 600px;
-  margin: 50px auto;
+  margin:  auto;
   background: white;
+  margin-top: 20px;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0, 128, 0, 0.1);

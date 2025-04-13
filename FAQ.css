@@ -1,7 +1,4 @@
  /* FAQ Page Specific Styles */
- .body{
-  margin-top: 75px;
- }
  .navbar {
     background-color: #246360e0;
     color: #f8f4ee;
@@ -11,6 +8,7 @@
     width: 100%;
     z-index: 100;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+   
 }
 
 .side-image {
@@ -86,6 +84,7 @@
 }
  
  .faq-section {
+  
     max-width: 800px;
     margin: 2rem auto;
     padding: 1rem;

@@ -13,25 +13,24 @@ body {
     padding-top: 80px;
 }
 .navbar {
-    background-color: #246360e0;
-    color: #f8f4ee;
-    padding: 1rem 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  background-color: #077e31d5;
+  color: #f8f4ee;
+  padding: 1rem 0;
+ position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
 }
 
 .nav-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .nav-logo {
     font-size: 1.8rem;
     color: #d4af37;
